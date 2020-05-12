@@ -1,8 +1,6 @@
 @charset "utf-8" ;
 body {
         font-size:95%;      /*フォントサイズの変更*/
-        font-family: "ＭＳ ゴシック",sans-serif;      /*フォント種類の指定*/
         line-height: 1.5;       /*行の高さの変更*/
         color:#962a2a;      /*文字色の変更*/
-        
 }
