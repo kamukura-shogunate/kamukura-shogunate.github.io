@@ -1,6 +1,11 @@
 @charset "utf-8" ;
 body {
-        font-size:95%; /*フォントサイズの変更*/
-        line-height:1.5; /*行の高さの変更*/
-        color:#962a2a; /*文字色の変更*/
+        background-color: aliceblue;/*背景色の変更*/
+        font-size:95%;/*フォントサイズの変更*/
+        line-height:1.5;/*行の高さの変更*/
+        color: black;/*文字色の変更*/
+}
+li {
+        list-style-type: none;/*リストマーカーなしにする*/
+        display: inline;/*リスト項目をインライン表示*/
 }
