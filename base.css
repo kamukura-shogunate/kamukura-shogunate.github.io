@@ -1,11 +1,41 @@
 @charset "utf-8" ;
+
+/*=========================
+全体的なスタイル
+==========================*/
+*{
+        margin: 0px;padding: 0px;/*全要素のマージン、パディングをリセット*/
+}
 body {
-        background-color: aliceblue;/*背景色の変更*/
+        background-image: url(white_00095.jpg);
         font-size:95%;/*フォントサイズの変更*/
         line-height:1.5;/*行の高さの変更*/
         color: black;/*文字色の変更*/
 }
-li {
+
+/*=======================
+メインメニュー
+========================*/
+ul#menu {
+        position: absolute; top: 0px; right: 0px;
+        width: 620px; height: 50px;    /*メインメニュー部分の幅と高さ*/
+} 
+
+#menu li {
         list-style-type: none;/*リストマーカーなしにする*/
-        display: inline;/*リスト項目をインライン表示*/
+        display: inline-block;/*リスト要素を一行にブロック表示する？*/
+        width: 200px; height: 25px;
+}
+
+#menu li a{
+        background-color: navy;
+        color: white;
+        display: block;/*リンク部分をブロック表示にする*/
+        width: 200px; height: 25px;/*リスト要素の幅と高さ*/
+        padding: 8px 0px 0px 0px;/*上パディング*/
+        text-align:center; /*テキストをセンター揃えにする*/
+        text-decoration: none;/*リンク下部の線を消す*/
+}
+#menu li a:hover {
+        background-color: rgb(0, 0, 90);
 }
