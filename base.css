@@ -7,11 +7,14 @@
         margin: 0px;padding: 0px;/*全要素のマージン、パディングをリセット*/
 }
 body {
-        width: 1280px;
+        width: 1260px;
         background-image: url(white_00095.jpg);
         font-size:95%;/*フォントサイズの変更*/
+        font-family: adrianna,arial,sans-serif;
+        font-weight: 400;
         line-height:1.5;/*行の高さの変更*/
         color: black;/*文字色の変更*/
+        overflow: scroll;
 }
 
 img{border: 0;} /*画像のボーダーをゼロにする*/
@@ -21,18 +24,20 @@ img{border: 0;} /*画像のボーダーをゼロにする*/
 ======================*/
 div#header {
         height: 80px;/*ヘッダー部分の高さ*/
+        display: flex;
+        padding: 20px 0px 5px 20px;/*見出しの位置調整*/
 }
-div#header h1{
-        padding: 10px 0px 5px 20px;/*見出しの位置調整*/
+div#logo h2 {
         font-size: 18px;/*フォントのサイズ*/
-        font-family: Arial, Helvetica, sans-serif;/*フォントの種類*/
+        font-family: inherit;/*フォントの種類*/
 }
-div#header h1 a{text-decoration: none;}
+div#logo h2 a{text-decoration: none;}
 /*=======================
 メインメニュー
 ========================*/
 ul#menu {
-        width: 620px; height: 50px;    /*メインメニュー部分の幅と高さ*/
+        width: 100%; height: 50px;    /*メインメニュー部分の幅と高さ*/
+        padding: 20px 0px 0px 150px;
 } 
 
 #menu li {
